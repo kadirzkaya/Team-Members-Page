@@ -1,0 +1,102 @@
+.container{
+    background-color: brown;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.item{
+    display: flex;
+    margin: 20px;
+    padding: 10px;
+    color: white;
+    width: 27%;
+    flex-basis: 340px;
+    height: 350px;
+    transition: transform 0.3s;
+}
+
+.img1{
+    background-image: url(boss.jpg);
+}
+
+.img2{
+    background-image: url(uxdesigner.jpg);
+}
+
+.img3{
+    background-image: url(leadmanager.jpg);
+}
+
+.img4{
+    background-image: url(art.jpg);
+}
+
+.img5{
+    background-image: url(developer.jpg);
+}
+
+.img6{
+    background-image: url(productowner.jpg);
+}
+
+.img1, .img2, .img3, .img4, .img5, .img6{
+    background-size: cover;
+    background-position: top;
+    width: 99%;
+    height: 100%;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 5px 10px 18px #cfcfcf;
+}
+
+.img2, .img5, .img2 + span, .img5 + span{
+    margin-top: 25px;
+}
+
+.head{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    font-size: 20px;
+}
+
+
+.head-1{
+    text-align: center;
+    margin-right: 100px;
+}
+
+.head-2{
+    margin-left: 50px;
+    width: 50%;
+}
+
+.item section span{
+    position: absolute;
+    top: 104%;
+} 
+
+.item section + span{
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    padding-left: 4px;
+}
+
+.content{
+    display: flex;
+    padding: 1em;
+    width: 100%;
+}
+
+.content section{
+    flex: 1 0 auto;
+
+}
+
+.item:hover{
+    transform: scale(110%);
+}
